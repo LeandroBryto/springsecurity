@@ -1,66 +1,71 @@
-# springsecurity
-
-📌 Sobre o projeto
+# 📌 Sobre o projeto
 
 Este projeto demonstra como implementar autenticação e autorização usando Spring Security 6 com JWT.
 
-🚀 Tecnologias utilizadas
+🚀 **Tecnologias utilizadas**
 
-Java 21
+- Java 21
+- Spring Boot 3.4.2
+- Spring Security 6
+- OAuth2 Resource Server
+- MySQL
 
-Spring Boot 3.4.2
+⚙️ **Configuração do ambiente**
 
-Spring Security 6
+1. Clone o repositório:
 
-OAuth2 Resource Server
+    ```bash
+    git clone https://github.com/seu-usuario/springsecurity.git
+    ```
 
-MySQL
+2. Acesse a pasta do projeto:
 
-⚙️ Configuração do ambiente
+    ```bash
+    cd springsecurity
+    ```
 
-Clone o repositório:
+3. Configure o banco de dados MySQL no arquivo `application.properties`:
 
-git clone https://github.com/seu-usuario/springsecurity.git
+    ```properties
+    spring.datasource.url=jdbc:mysql://localhost:3306/sua_base_de_dados
+    spring.datasource.username=seu_usuario
+    spring.datasource.password=sua_senha
+    ```
 
-Acesse a pasta do projeto:
+4. Execute o projeto:
 
-cd springsecurity
+    ```bash
+    mvn spring-boot:run
+    ```
 
-Configure o banco de dados MySQL no application.properties:
+🛠 **Como interagir com o banco de dados?**
 
-spring.datasource.url=jdbc:mysql://localhost:3306/sua_base_de_dados
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
+Utilizamos o **Beekeeper Community**.
 
-Execute o projeto:
+📡 **Como interagir com a API?**
 
-mvn spring-boot:run
+Utilizamos o **Bruno**.
 
-🛠 Como interagir com o banco de dados?
+🐳 **Rodando com Docker**
 
-Utilizamos o Beekeeper Community
+1. Construa a imagem Docker:
 
-📡 Como interagir com a API?
+    ```bash
+    docker build -t springsecurity .
+    ```
 
-Utilizamos o Bruno
+2. Execute o container:
 
-🐳 Rodando com Docker
+    ```bash
+    docker run -p 8080:8080 springsecurity
+    ```
 
-Construa a imagem Docker:
-
-docker build -t springsecurity .
-
-Execute o container:
-
-docker run -p 8080:8080 springsecurity
-
-📖 Documentação da API (Swagger)
+📖 **Documentação da API (Swagger)**
 
 Acesse a documentação interativa no navegador:
 
-http://localhost:8080/swagger-ui.html
+[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
-👨‍💻 Desenvolvido por
+👨‍💻 **Desenvolvido por**
 
 Leandro Barreto de Brito
-
